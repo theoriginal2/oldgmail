@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sign-In Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f1f3f4;
+    }
+
+    .container {
+      width: 700px;
+      margin: 100px auto;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .google-logo {
+      width: 40px;
+    }
+
+    .welcome {
+      font-size: 32px;
+      font-weight: 400;
+    }
+
+    .email-select {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 25px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+    }
+
+    .email-select span {
+      font-size: 16px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 50%;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .show-password {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .actions a {
+      color: #1a73e8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .actions button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #5f6368;
+      font-size: 12px;
+    }
+
+    .footer a {
+      margin: 0 10px;
+      color: #5f6368;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+      <div class="welcome">Welcome</div>
+      <div class="email-select">
+        <span>👤</span>
+        <span>chrisadole2@gmail.com</span>
+        <span>▾</span>
+      </div>
+    </div>
+    <div class="right">
+      <input type="password" placeholder="Enter your password">
+      <div class="show-password">
+        <input type="checkbox" id="showPass">
+        <label for="showPass">Show password</label>
+      </div>
+      <div class="actions">
+        <a href="#">Forgot password?</a>
+        <button>Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    English (United States) &nbsp; ▼
+    <br><br>
+    <a href="#">Help</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+  </div>
+
+</body>
+</html>
